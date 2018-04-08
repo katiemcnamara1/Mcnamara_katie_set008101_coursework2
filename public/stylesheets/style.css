@@ -50,12 +50,55 @@ img:hover {
     padding-right: 20px;
 }
 
+.h2{
+  display: inline-block;
+
+  margin-left: 20px;
+  padding: 2px;
+  font-size: 8px;
+  font-family: courier;
+  width:320px;
+  height: 280px;
+  background-image: url(http://i65.tinypic.com/24o6pz5.jpg);
+}
+
+.h2 img{
+  width: 150%;
+    height: 100%;
+}
+.form{
+  margin-left: 20px;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+
+
+}
+
+.form1{
+  margin-left: 3px;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+
+}
+
+.form2{
+margin-left: 170px;
+border: 2px solid red;
+    border-radius: 4px;
+
+}
+
+.form3{
+  display: inline-block;
+}
 
 
 
 
 .login{
-  font-size: 20px;
+  font-size: 5px;
   font-family: courier;
   color: black;
 }
@@ -68,12 +111,12 @@ img:hover {
   background-color: #FFDAB9;
   padding: 20px;
   border: none;
-  width: 50%;
+  width: 25%;
   float: left;
   color: white;
   font-size: 20px;
   font-family: courier;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
   cursor: pointer;
 }
 
@@ -88,6 +131,8 @@ img:hover {
     background: #FFDAB9;
     margin-top: 20px;
     width: 100%;
+    color: white;
+    font-family: courier;
 
 }
 
@@ -114,10 +159,25 @@ img:hover {
 
 /* Add a card effect for articles */
 .card {
+     background-color: #F0F8FF ;
+     padding: 20px;
+     margin-top: 20px;
+     font-size: 20px;
+     font-family: courier;
+     color: #FFDAB9;
+
+}
+
+
+.card2 {
      background-color: white;
      padding: 20px;
      margin-top: 20px;
+     font-size: 10px;
+     font-family: courier;
+
 }
+
 .loginBack{
 
 padding: 50px;
@@ -189,11 +249,7 @@ background-image: url(https://i.pinimg.com/originals/6a/b9/22/6ab922c6f6e2db9151
 
 }
 
-input {
 
-  height: 70px;
-  font-size: 100px;
-}
 
 mark {
   background-color:white;

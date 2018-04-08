@@ -1,23 +1,46 @@
-extends layout
+doctype html
+html
+  head
+    title=title 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
 
 block heading
   .header(style = "text-align: left;").
     <mark> TAILS OF A PUG </mark>
   
-.navBar       
-    a(href = "/") FEED
+  .navBar       
+        a(href = "/") ABOUT
+        
+        a(href="/feed") FEED
+        
+        a(href="/posts") ADD POST
+        
+        a(href = "/login") LOGIN
     
-    a(href="/posts") POSTS
   
-block columns 
+  
+  block columns 
   .row
       .leftcolumn
         .card
-          
+        
+          #addPost
+          form#form(name="form", method="post", action="/posts")
+            textarea#postContent(name="postTitle",cols="80", placeholder="Please")      
+            textarea#postContent(name="postDescr",cols="80", placeholder="Please enter post content")
+            input#inputButton(type="submit",value="New Post")
+    
+  block titlePost
+  
+  block descrPost
+  
+  block datePost    
 
             
       .rightcolumn
-        .card(style= "text-align: center;").
+        .card2(style= "text-align: center;").
         <center>  
           
         a(target="_blank", href="img_forest.jpg")
@@ -44,24 +67,14 @@ block columns
         
       
           
-        
-        .loginBack
-      
-          <center><mark>SUBSCRIBE BELOW</mark> </center>
-          br
-          p  
-          form
-            input(type="search" placeholder="Enter your email address") 
-          button.logB(type= "button") submit  
-          form
-            input(type="search" placeholder="Enter your password")
+  
               
         
 
 
 
               
-        .card
+        .card2
           <center>
           p
           a.fa.fa-facebook(href="#")

@@ -7,18 +7,20 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
   body
-    
-    
-    block heading
       
-    .navBar       
-        a(href = "/") FEED
-        
-        a(href="/posts") POSTS
-        
+    block heading
+              
     block layout
       
+    block login
+      
     block columns
+      
+    block forms 
+      form(name="name", method="post", action="/login")
+          input#name(name="nameBox2", type="text" , placeholder="Enter your username")    
+          input#password(name="passwordBox2" , type="password", placeholder="Enter your password")
+          input#button(type="submit" value="submit")
 
       
       

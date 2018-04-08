@@ -4,28 +4,36 @@ extends layout
 block heading
   .header(style = "text-align: left;").
     <mark> TAILS OF A PUG </mark>
+    
+    
+  .navBar       
+        a(href = "/") ABOUT
+        
+        a(href="/feed") FEED
+        
+        a(href="/posts") ADD POST
+        
+        a(href = "/login") LOGIN
 
 block layout
     .row
         .leftcolumn
-          .card
-            h TITLE HEADING
-          
-            .fakeimg(style="height:200px;") Image
-            p Some text..
-            p Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         
-              .card
-                h TITLE HEADING
-                h Title description, Sep 2, 2017
-                
-              .fakeimg(style="height:200px;") Image
-              p Some text..
-              p Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.  
-
+          .card(style="text-align: center;")
+            
+            p WELCOME TO TAILS OF A PUG!! 
+            p A BLOG DEDICATED TO THE ADVENTURES OF AN ADOPTED 5 YEAR OLD BLACK PUG LIVING HIS TRUTH.
+            
+            P BORN 26TH OCTOBER 2012, PUGSEY CAME INTO THE WORLD - THE GREEDIEST, SMALLEST AND ONLY BOY IN A LITTER OF 4.  
               
+                
+            
+              p FROM AN EARLY AGE HE HAD A VESTED INTEREST IN FOOD, ONE WHICH HAS STUCK AND POSSIBLY GOTTEN WORSE THROUGHOUT THE YEARS. 
+              p HIS GLOBETROTTING TENDANCIES MEAN HE IS WELL KNOWN AROUND NEIGHBOURHOODS ACROSS WEST LOTHIAN. 
+              p DISCLAIMER: THIS PUG HAS UNDERGONE PLASTIC SURGERY, PLEASE DONT EXPECT EVERY PUG YOU SEE TO BE THIS WELL GROOMED.  
+              .h2    
         .rightcolumn
-          .card(style= "text-align: center;").
+          .card2(style= "text-align: center;").
           <center>  
             
           a(target="_blank", href="img_forest.jpg")
@@ -58,18 +66,20 @@ block layout
             <center><mark>SUBSCRIBE BELOW</mark> </center>
             br
             p  
-            form
-              input(type="search" placeholder="Enter your email address") 
-            button.logB(type= "button") submit  
-            form
-              input(type="search" placeholder="Enter your password")
+            form(name="name", method="post", action="/")
+            
+                input(name="nameBox", type="text" , placeholder="Enter your username") 
+                input(type="submit" value="submit")
+                input(name="passwordBox" , type="password", placeholder="Enter your password")
+                
+              
                 
           
 
 
 
                 
-          .card
+          .card2
             <center>
             p
             a.fa.fa-facebook(href="#")
@@ -81,7 +91,8 @@ block layout
             <center>
 
 
-  
+      .footer
+          h &copy; KATIE MCNAMARA APRIL 2018
   
   
   //-.h2

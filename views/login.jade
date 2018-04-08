@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title=title 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    
+    block heading
+    .header(style = "text-align: left;").
+      <mark> TAILS OF A PUG </mark>
+      
+
+    .navBar       
+              a(href = "/") ABOUT
+              
+              a(href="/feed") FEED
+              
+              a(href="/posts") ADD POST
+              
+              a(href = "/login") LOGIN
+      
+
+  
+    <center>
+    form(name="name", method="post", action="/login")
+        input#name(name="nameBox2", type="text" , placeholder="Enter your username")    
+        input#password(name="passwordBox2" , type="password", placeholder="Enter your password")
+        input#button(type="submit" value="submit")
