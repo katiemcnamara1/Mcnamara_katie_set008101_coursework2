@@ -8,6 +8,8 @@ In order to be able to run this blog platform, the following must be installed o
         Node.Js
         MongoDb
         Mongoose
+        
+Dependencies will need to be installed by using : npm install
 
 In order for this to run, please enusre opena terminal window and navigate to the directory where this has been saved, then type the following command:
         npm start
